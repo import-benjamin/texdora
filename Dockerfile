@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED=1
 RUN useradd -m texdora
 RUN dnf install -y \
         make \
-        texlive-2021 \
+        texlive-2022 \
         texlive-luatex85 \
         texlive-plex-otf \
         texlive-babel-french \
