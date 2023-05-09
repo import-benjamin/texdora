@@ -27,7 +27,6 @@ RUN dnf install -y \
         ibm-plex-sans-fonts \
         ibm-plex-serif-fonts \
         python3 \
-        pandoc \
         && fmtutil -sys --all \
         && ln -sf python3 /usr/bin/python \
         && dnf clean all
