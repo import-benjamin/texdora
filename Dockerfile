@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora@sha256:d643707ffb780448c26dd5164edba3291aa39dbd790d06fbf779511bbe32cba9
+FROM quay.io/fedora/fedora@sha256:626f4480c997fb048a7e89a57ff6b270a70c6dc474e7755ec5be6b4815904ae5
 
 RUN dnf install -y \
         make \
