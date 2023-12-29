@@ -7,10 +7,11 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
         fonts-font-awesome \
         python3 \
         python3-pip \
+        wget \
         && rm -rf /var/lib/apt/lists/*
 
 RUN cd /tmp && \
-    curl -fsSL -O https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
+    wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
     zcat < install-tl-unx.tar.gz | tar xf - && \
     cd install-tl-* && \
     perl ./install-tl --no-interaction
