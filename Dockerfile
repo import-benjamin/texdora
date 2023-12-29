@@ -19,4 +19,4 @@ ENV PATH="${PATH}:/usr/local/texlive/2023/bin/x86_64-linux"
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
-    && pip install --user --no-cache-dir Pygments
+    && pip install --user --no-cache-dir Pygments==2.17.2
