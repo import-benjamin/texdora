@@ -1,6 +1,6 @@
 FROM ubuntu:22.04@sha256:6042500cf4b44023ea1894effe7890666b0c5c7871ed83a97c36c76ae560bb9b	
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update -y && apt-get install -y --no-install-recommends \
         git=2.34.1 \
         make=4.3-4.1 \
         perl=5.34.0 \
