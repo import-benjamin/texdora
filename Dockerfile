@@ -14,7 +14,7 @@ RUN cd /tmp && \
     wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
     zcat < install-tl-unx.tar.gz | tar xf - && \
     cd install-tl-* && \
-    perl ./install-tl --no-interaction
+    perl ./install-tl --no-interaction --schème=minimal
 
 ENV PATH="${PATH}:/usr/local/texlive/2023/bin/x86_64-linux"
 
